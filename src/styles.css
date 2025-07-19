@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Remove all default spacing and ensure full viewport coverage */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: #fff; /* Optional: set background color */
+}

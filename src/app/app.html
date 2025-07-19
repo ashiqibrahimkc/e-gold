@@ -1,0 +1,115 @@
+<nav>
+  <div class="navbar">
+    <div class="main">
+      <div class="navbar-logo">Star</div>
+
+      <div class="navbar-search">
+        <input type="text" placeholder="Search products...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="navbar-link">
+        <a class="active">Home</a>
+        <a>Products
+          <i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown-content">
+            <a>gold</a>
+            <a>silver</a>
+            <a>diamond</a>
+            <a>platinum</a>
+          </div>
+        </a>
+        <a>About Us</a>
+        <a>Contact Us</a>
+      </div>
+      <div class="gold-rate">Current Gold Rate:<span class="gr">₹5,890/gm</span></div>
+
+      
+
+      <div class="navbar-icons">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="navbar-toggle" (click)="showMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+    <div class="navbar-search2">
+        <input type="text" placeholder="Search products...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
+    <div class="side" #sideUl id="side-ul">
+      <span class="close-icon" (click)="closeMenu()"><i class="fa-solid fa-xmark"></i></span>
+      <ul class="side-ul">
+        <li><a class="active">Home</a></li>
+        <li><a>Products
+          <i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown-content">
+            <a>gold</a>
+            <a>silver</a>
+            <a>diamond</a>
+            <a>platinum</a>
+          </div>
+        </a></li>
+        <li><a>About Us</a></li>
+        <li><a>Contact Us</a></li>
+        <li><a>Profile <i class="fa-solid fa-user"></i></a></li>
+        <li><a>Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- About Us -->
+    <div class="footer-col">
+      <h3>About Us</h3>
+      <p>
+        We have been fostering our divisions with monstrous speed and look into the interests of our shoppers and understanding their interest. Our principle intention is to fabricate the business all over Kerala and give great client experience.
+      </p>
+    </div>
+
+    <!-- Customer -->
+    <div class="footer-col">
+      <h3>Customer</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Our Stores</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms And Condition</a></li>
+      </ul>
+    </div>
+
+    <!-- Categories -->
+    <div class="footer-col">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Gold</a></li>
+        <li><a href="#">22 Carat Gold</a></li>
+        <li><a href="#">18 Carat Gold</a></li>
+        <li><a href="#">Diamond</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-col">
+      <h3>Social Media</h3>
+      <ul class="social-media">
+        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 star Gold. All Rights Reserved.</p>
+  </div>
+</footer>

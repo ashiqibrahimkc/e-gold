@@ -1,0 +1,79 @@
+<!-- imgcarousel -->
+<div class="carousel-container" (mouseenter)="stopAutoSlide()" (mouseleave)="startAutoSlide()">
+  <div class="carousel-slide" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+    <img *ngFor="let img of images" [src]="img" alt="Carousel image">
+  </div>
+
+  <div class="carousel-buttons">
+    <button (click)="prev()">❮</button>
+    <button (click)="next()">❯</button>
+  </div>
+</div>
+<div class="second-bar">
+  <div class="features-wrapper">
+  <div class="feature-box">
+    <i class="fas fa-shield-alt"></i>
+    <span>Secure Shopping</span>
+  </div>
+  <div class="feature-box">
+    <i class="fas fa-certificate"></i>
+    <span>BIS Hallmarked</span>
+  </div>
+  <div class="feature-box">
+    <i class="fas fa-gem"></i>
+    <span>Certified Diamonds</span>
+  </div>
+  <div class="feature-box">
+    <i class="fas fa-headset"></i>
+    <span>24/7 Support</span>
+  </div>
+</div>
+<!-- jwellery categories -->
+ <div class="categories-container" (click)="gotoProducts()">
+    <div class="category-card" *ngFor="let item of jewelryCategories">
+      <img [src]="item.image" [alt]="item.label" />
+      <p>{{ item.label }}</p>
+    </div>
+ </div>
+ <!-- jwellery-gallery -->
+  <div class="gallery-container">
+  <div class="gallery-item" *ngFor="let item of jewelryItems">
+    <img [src]="item"/>
+  </div>
+</div>
+
+<!-- new product -->
+<div class="section-header">
+  <h2>New Products</h2>
+  <div class="underline"></div>
+  <div class="tabs">
+    <span class="tab active">Featured</span>
+    <span class="tab">Trending</span>
+    <span class="tab">New Arrival</span>
+  </div>
+</div>
+
+<!-- Promo Banner -->
+<div class="promo-banner">
+  <div class="promo-left">
+    <p class="small-text">Hurry up and Get Smart Gold</p>
+    <h3>star Scheme App</h3>
+    <p>Save your Money, Join the Scheme</p>
+    <p>And Secure Your Future</p>
+    <p class="highlight">DOWNLOAD THE APP</p>
+    <button class="download-btn">
+      Download →
+    </button>
+  </div>
+
+  <div class="promo-right">
+    <img src="assets/images/necklace.jpg" alt="Necklace Offer" />
+    <div class="offer-badge">20% OFF</div>
+    <div class="store-badges">
+      <img src="assets/images/appstore.jpg" alt="App Store" />
+      <img src="assets/images/playstore.png" alt="Google Play" />
+    </div>
+  </div>
+</div>
+</div>
+

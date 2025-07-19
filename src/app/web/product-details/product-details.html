@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <div class="left">
+      <img [src]="selectedImage" class="main-image" alt="Product" />
+      <div class="thumbs">
+        <img *ngFor="let img of product.images" [src]="img" class="thumb"
+             [class.active]="img === selectedImage"
+             (click)="selectImage(img)" />
+      </div>
+    </div>
+
+    <div class="right">
+      <h1>{{ product.title }}</h1>
+      <p class="rating">★ {{ product.rating }} ({{ product.reviews }} reviews)</p>
+
+      <div class="price">
+        ₹{{ product.price }}
+      </div>
+
+      <ul class="offers">
+        <li>Design</li>
+        <li>Making Charge</li>
+        <li>Stone weight</li>
+      </ul>
+
+      <div class="buttons">
+        <button class="add">Add to Cart</button>
+        <button class="buy">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div>
