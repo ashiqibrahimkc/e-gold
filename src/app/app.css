@@ -214,12 +214,12 @@ nav{
 }
 /* side */
 .side{
-  color: white;
+  color: #1E1E1E;
   position: absolute;
   top: 0;
   right:0;
   height: 100vh;
-  background-color: red;
+  background-color: #D4AF37;
   width: 40%;
   padding: 2%;
   /* display: none; */
