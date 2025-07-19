@@ -30,8 +30,8 @@
         <i class="fa-solid fa-user"></i>
         <i class="fa-solid fa-cart-shopping"></i>
       </div>
-      <div class="navbar-toggle" (click)="showMenu()">
-        <i class="fa-solid fa-bars"></i>
+      <div class="navbar-toggle" >
+        <i class="fa-solid fa-bars"(click)="showMenu()"></i>
       </div>
 
     </div>
@@ -41,7 +41,7 @@
     </div>
   </div>
     <div class="side" #sideUl id="side-ul">
-      <span class="close-icon" (click)="closeMenu()"><i class="fa-solid fa-xmark"></i></span>
+      <span class="close-icon" ><i class="fa-solid fa-xmark"(click)="closeMenu()"></i></span>
       <ul class="side-ul">
         <li><a class="active">Home</a></li>
         <li><a>Products
