@@ -10,9 +10,9 @@ import { Router } from '@angular/router';
 export class Home implements OnInit,OnDestroy{
 constructor(private router:Router){}
 images : string[] = [
-'assets/images/image1.png',
-'assets/images/image2.png',
-'assets/images/image3.png'
+'assets/images/1.png',
+'assets/images/2.png',
+'assets/images/3.png'
 ]
 jewelryCategories = [
     { image: 'assets/images/earings.jpg', label: 'EARING' },
