@@ -12,13 +12,13 @@ import { ViewChild,ElementRef } from '@angular/core';
 })
 export class App {
   protected title = 'web';
-   @ViewChild('sideUl') sideUl!: ElementRef;
+   isOpen = false;
 
   showMenu() {
-    this.sideUl.nativeElement.style.visibility = 'visible';
+    this.isOpen = true;
   }
 
   closeMenu() {
-    this.sideUl.nativeElement.style.visibility = 'hidden';
+    this.isOpen = false;
   }
 }
