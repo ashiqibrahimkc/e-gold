@@ -416,3 +416,27 @@ nav{
     text-align: left;
   }
 }
+
+
+/* router */
+.content-wrapper {
+  padding-top: 80px; /* navbar (about 70px) + marquee (about 40px) */
+}
+@media (max-width: 1200px) {
+  .content-wrapper {
+    padding-top: 90px; /* more padding if nav increases in height */
+  }
+}
+/* For medium screens where navbar/marquee might stack or enlarge */
+@media (max-width: 850px) {
+  .content-wrapper {
+    padding-top: 100px; /* more padding if nav increases in height */
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 600px) {
+  .content-wrapper {
+    padding-top: 100px; /* adjust for taller nav/marquee on mobile */
+  }
+}
